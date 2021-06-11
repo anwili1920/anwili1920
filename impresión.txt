@@ -1,0 +1,10 @@
+Detroit ---> [ Tokyo, Austin, Texas ]
+Hong Kong ---> [ Singapore, Tokyo, San Francisco ]
+Singapore ---> [ Hong Kong, Tokyo ]
+Washington, DC ---> [ Tokyo, Austin, Texas, San Francisco,
+Seattle ]
+Tokyo ---> [ Singapore, Hong Kong, Detroit, Washington, DC ]
+San Francisco ---> [ Hong Kong, Washington, DC, Seattle, Austin,
+Texas ]
+Austin, Texas ---> [ Detroit, Washington, DC, San Francisco ]
+Seattle ---> [ Washington, DC, San Francisco ]
