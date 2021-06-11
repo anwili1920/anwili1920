@@ -36,6 +36,14 @@ fun main(){
  val radiografia=graph.crearvertice("radiografia")
  val banco=graph.crearvertice("banco")
  val paradero=graph.crearvertice("paradero")
+ graph.añadir(casa,hospital,3000.58)
+ graph.añadir(hospital,farmacia,2500.58)
+ graph.añadir(casa,farmacia,5000.49)
+ graph.añadir(farmacia,laboratorio,450.58)
+ graph.añadir(laboratorio,radiografia,500.58)
+ graph.añadir(radiografia,banco,292.58)
+ graph.añadir(banco,farmacia,300.49)
+ 
  println("Todo funciona correctamente")
  //val hospital=graph.crearvertice("")
-}
+}  
