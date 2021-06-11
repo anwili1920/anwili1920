@@ -30,7 +30,7 @@ class listaAdyacente<T>: graphos<T>{
             adyacentes.forEach{(vertice,arista)->//2
             val edgeString=aristas.joinToString
             { it.destino.dato.toString()}//3
-            append("${vertice.data}--> n")
+            append("${vertice.data}-->[ $edgeString ]\n")
             }
         }
     }
