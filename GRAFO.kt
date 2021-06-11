@@ -34,6 +34,15 @@ class listaAdyacente<T>: graphos<T>{
             }
         }
     }
+    override fun toString(): String {
+return buildString { // 1
+adjacencies.forEach { (vertex, edges) -> // 2
+val edgeString = edges.joinToString
+{ it.destination.data.toString() } // 3
+append("${vertex.data} ---> [ $edgeString ]\n") // 4
+}
+}
+}
 } 
 fun main(){
  // creando los vertices de los lugares
