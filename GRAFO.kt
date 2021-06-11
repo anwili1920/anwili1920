@@ -25,6 +25,15 @@ class listaAdyacente<T>: graphos<T>{
         adyacentes[origen]?.add(a)
     }
     override fun aristas(origen: vertice<T>)=adyacentes[origen] ?:arrayListOf()
+    override fun toString(): String{
+        return buildString{
+            adyacentes.forEach{(vertice,arista)->//2
+            val edgeString=aristas.joinToString
+            { it.destino.dato.toString()}//3
+            append("${vertice.data}--> n")
+            }
+        }
+    }
 } 
 fun main(){
  // creando los vertices de los lugares
